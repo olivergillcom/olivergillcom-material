@@ -208,7 +208,7 @@ export default function ProfilePage({ ...rest }) {
                       <GridItem xs={12} sm={12} md={10}>
                             <span>
                               <p>
-                              If I describe myself as a consultant, nobody knows what that means, and for good reason. The issue with "consulting" as a career is how much of a catch-all term it has become, and therefore become meaningless. If I were to write out all the responsibilities I have held and roles I have performed, contractually and otherwise, there would be few areas of business I haven't touched.<br /><br />Rather than roll off my CV, I feel it would be best to explain what I actually end up doing which also turns out to be what I find most enjoyable.
+                              If I describe myself as a consultant, nobody knows what that means. The issue with "consulting" as a career is how much of a catch-all term it has morphed into, and therefore become meaningless. If I were to write out all the responsibilities I have held and roles I have performed, there would be few areas of business I haven't touched.<br /><br />Rather than roll off my CV, I feel it would be best to explain what I actually end up doing which also turns out to be what I find most enjoyable.
                               </p>
                             </span>
 
@@ -216,7 +216,7 @@ export default function ProfilePage({ ...rest }) {
                     </GridContainer>
                     <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={10}>
-                      <h3>Some roles of note</h3>
+                      <h3>My favourite roles</h3>
                     </GridItem>
                       <GridItem xs={12} sm={12} md={8}>
                       <Accordion
