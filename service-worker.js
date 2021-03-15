@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/olivergillcom-material/precache-manifest.5af6cdd1b6f59263265e7dba57a64443.js"
+  "/olivergillcom-material/precache-manifest.0f9588a3de9c84499882b4ef0a53df52.js"
 );
 
 self.addEventListener('message', (event) => {
