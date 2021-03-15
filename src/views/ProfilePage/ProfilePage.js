@@ -27,7 +27,8 @@ import Muted from "components/Typography/Muted.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
-
+import Accordion from "components/Accordion/Accordion.js";
+// images
 import face from "assets/img/faces/oli.jpg";
 import oluEletu from "assets/img/examples/olu-eletu.jpg";
 import clemOnojeghuo from "assets/img/examples/clem-onojeghuo.jpg";
@@ -134,12 +135,17 @@ export default function ProfilePage({ ...rest }) {
                       <GridItem xs={12} sm={12} md={3}>
                         <img
                           alt="..."
-                          src={mariyaGeorgieva}
+                          src={clemOnojeghuo}
                           className={navImageClasses}
                         />
                         <img
                           alt="..."
-                          src={clemOnojegaw}
+                          src={oluEletu}
+                          className={navImageClasses}
+                        />
+                        <img
+                          alt="..."
+                          src={cynthiaDelRio}
                           className={navImageClasses}
                         />
                       </GridItem>
@@ -160,6 +166,29 @@ export default function ProfilePage({ ...rest }) {
                           className={navImageClasses}
                         />
                       </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                      <Accordion
+                      
+                        activeColor="rose"
+                        collapses={[
+                          {
+                            title: "Senior Consultant - Atos",
+                            content:
+                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                          },
+                          {
+                            title: "Digital Strategy Consultant - Accenture",
+                            content:
+                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                          },
+                          {
+                            title: "Technology Consultant - CSC",
+                            content:
+                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                          }
+                        ]}
+                      />
+                      </GridItem>
                     </GridContainer>
                   )
                 },
@@ -174,7 +203,7 @@ export default function ProfilePage({ ...rest }) {
                         md={7}
                         className={classes.gridItem}
                       >
-                        <h4 className={classes.title}>Latest Collections</h4>
+                        <h4 className={classes.title}>Latest Projects</h4>
                         <GridContainer className={classes.collections}>
                           <GridItem xs={12} sm={12} md={6}>
                             <Card
@@ -188,11 +217,11 @@ export default function ProfilePage({ ...rest }) {
                                   color="warning"
                                   className={classes.badge}
                                 >
-                                  Spring 2016
+                                  WEBSITE
                                 </Badge>
                                 <a href="#pablo">
                                   <h2 className={classes.cardTitleWhite}>
-                                    Stilleto
+                                    Gillflix
                                   </h2>
                                 </a>
                               </CardBody>
@@ -207,11 +236,11 @@ export default function ProfilePage({ ...rest }) {
                             >
                               <CardBody background className={classes.cardBody}>
                                 <Badge color="info" className={classes.badge}>
-                                  Spring 2016
+                                  INFRA
                                 </Badge>
                                 <a href="#pablo">
                                   <h2 className={classes.cardTitleWhite}>
-                                    High Heels
+                                    Smart Home
                                   </h2>
                                 </a>
                               </CardBody>
@@ -226,33 +255,11 @@ export default function ProfilePage({ ...rest }) {
                             >
                               <CardBody background className={classes.cardBody}>
                                 <Badge color="danger" className={classes.badge}>
-                                  Summer 2016
+                                  Youtube
                                 </Badge>
                                 <a href="#pablo">
                                   <h2 className={classes.cardTitleWhite}>
-                                    Flats
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + darrenColeshill + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge
-                                  color="success"
-                                  className={classes.badge}
-                                >
-                                  Winter 2016
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Men{"'"}s Sneakers
+                                    Idiots Onboard
                                   </h2>
                                 </a>
                               </CardBody>
@@ -480,6 +487,7 @@ export default function ProfilePage({ ...rest }) {
         content={
           <div>
             <div className={classes.left}>
+              {/*
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
@@ -513,18 +521,11 @@ export default function ProfilePage({ ...rest }) {
                     Licenses
                   </a>
                 </ListItem>
-              </List>
+              </List>*/}
             </div>
             <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-profile"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              &copy; {1900 + new Date().getYear()}, made with{" "}
+              <Favorite className={classes.icon} /> by{" "}Oli.
             </div>
           </div>
         }
