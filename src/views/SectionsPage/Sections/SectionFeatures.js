@@ -219,6 +219,7 @@ export default function SectionFeatures({ ...rest }) {
               </h5>
             </GridItem>
           </GridContainer>
+          asdf
           <GridContainer>
             <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mlAuto}>
               <InfoArea

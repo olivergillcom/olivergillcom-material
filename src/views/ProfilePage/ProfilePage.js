@@ -10,8 +10,18 @@ import ListItem from "@material-ui/core/ListItem";
 import Camera from "@material-ui/icons/Camera";
 import Briefcase from "@material-ui/icons/Work";
 import People from "@material-ui/icons/People";
+import EmojiPeople from "@material-ui/icons/EmojiPeople";
 import Projects from "@material-ui/icons/Build";
 import Favorite from "@material-ui/icons/Favorite";
+import CodeIcon from "@material-ui/icons/Code";
+import FormatPaint from "@material-ui/icons/FormatPaint";
+import Dashboard from "@material-ui/icons/Dashboard";
+import ViewCarousel from "@material-ui/icons/ViewCarousel";
+import AccessTime from "@material-ui/icons/AccessTime";
+import AttachMoney from "@material-ui/icons/AttachMoney";
+import Code from "@material-ui/icons/Code";
+import SportsEsports from "@material-ui/icons/SportsEsports";
+import CallSplit from "@material-ui/icons/CallSplit";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -28,6 +38,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
 import Accordion from "components/Accordion/Accordion.js";
+import InfoArea from "components/InfoArea/InfoArea.js";
 // images
 import face from "assets/img/faces/oli.jpg";
 import oluEletu from "assets/img/examples/olu-eletu.jpg";
@@ -40,6 +51,8 @@ import avatar from "assets/img/faces/avatar.jpg";
 import marc from "assets/img/faces/marc.jpg";
 import kendall from "assets/img/faces/kendall.jpg";
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
+import bg9 from "assets/img/bg9.jpg";
+
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
@@ -117,56 +130,93 @@ export default function ProfilePage({ ...rest }) {
               </div>
             </GridItem>
           </GridContainer>
-          <div className={classNames(classes.description, classes.textCenter)}>
-            <p>
-            Since putting together my first computer aged four, I have been the technology enthusiast that friends, family and latterly clients have come to for help with what they have, and the technology evangelist they come to for advice on current and future technology.{" "}
-            </p>
-          </div>
           <div className={classes.profileTabs}>
             <NavPills
               alignCenter
               color="primary"
               tabs={[
                 {
+                  tabButton: "About Me",
+                  tabIcon: EmojiPeople,
+                  tabContent: (
+                    <GridContainer justify="center"> 
+                    <GridContainer justify="center">
+                      <GridItem
+                        xs={12}
+                        sm={12}
+                        md={12}
+                        className={
+                          classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
+                        }
+                      >
+                        <h5 className={classes.description}>
+                          This is the paragraph where you can write more details about
+                          your product. Keep you user engaged by providing meaningful
+                          information.
+                        </h5>
+                      </GridItem>
+                    </GridContainer>
+                    <GridContainer>
+                      <GridItem xs={12} sm={12} md={4}>
+                        <InfoArea
+                          icon={CodeIcon}
+                          title="Geek"
+                          description={
+                            <span>
+                              <p>
+                              From an early age I have always been fascinated by how things work, how they could be improved, and how they could be combined with something else to become greater than the sum of their parts. Luckily for my parents, the deconstructed devices they came home to were not sacrificed in vain - first leading me to study Computer Science at University, and subsequently launch my career.
+                              </p>
+                            </span>
+                          }
+                          iconColor="info"
+                        />
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={4}>
+                        <InfoArea
+                          icon={SportsEsports}
+                          title="Gamer"
+                          description={
+                            <span>
+                              <p>
+                                Divide details about your product or agency work into
+                                parts. Write a few lines about each one. A paragraph
+                                describing a feature will be enough.
+                              </p>
+                            </span>
+                          }
+                          iconColor="danger"
+                        />
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={4}>
+                        <InfoArea
+                          icon={CallSplit}
+                          title="Trailblazer"
+                          description={
+                            <span>
+                              <p>
+                                Divide details about your product or agency work into
+                                parts. Write a few lines about each one. A paragraph
+                                describing a feature will be enough.
+                              </p>
+                            </span>
+                          }
+                          iconColor="success"
+                        />
+                      </GridItem>
+                    </GridContainer>
+                    </GridContainer>
+                  )
+                },
+                {
                   tabButton: "Work",
                   tabIcon: Briefcase,
                   tabContent: (
                     <GridContainer justify="center">
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={clemOnojeghuo}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={oluEletu}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={cynthiaDelRio}
-                          className={navImageClasses}
-                        />
+                      <br />
+                      <GridItem xs={12} sm={12} md={8}>
+                        Oli is a Digital Consultant experienced in digital strategy, business development, and solution architecture. With a background in computer science and electronic engineering, he has a keen grasp on emerging technologies and trends. This, paired with a broad view over multiple industries, allows him to effectively devise and communicate new concepts, solutions and strategies with clients, and together develop a vision and execution path for their own digital future.
                       </GridItem>
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={clemOnojeghuo}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={oluEletu}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={cynthiaDelRio}
-                          className={navImageClasses}
-                        />
-                      </GridItem>
-                      <GridItem xs={12} sm={12} md={12}>
+                      <GridItem xs={12} sm={12} md={8}>
                       <Accordion
                       
                         activeColor="rose"
@@ -191,7 +241,8 @@ export default function ProfilePage({ ...rest }) {
                       </GridItem>
                     </GridContainer>
                   )
-                },
+                }
+                /*,
                 {
                   tabButton: "Projects",
                   tabIcon: Projects,
@@ -476,7 +527,7 @@ export default function ProfilePage({ ...rest }) {
                       </GridContainer>
                     </div>
                   )
-                }
+                }*/
               ]}
             />
           </div>
