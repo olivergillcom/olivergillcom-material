@@ -139,24 +139,7 @@ export default function ProfilePage({ ...rest }) {
                   tabButton: "About Me",
                   tabIcon: EmojiPeople,
                   tabContent: (
-                    <GridContainer justify="center"> 
-                    <GridContainer justify="center">
-                      <GridItem
-                        xs={12}
-                        sm={12}
-                        md={12}
-                        className={
-                          classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-                        }
-                      >
-                        <h5 className={classes.description}>
-                          This is the paragraph where you can write more details about
-                          your product. Keep you user engaged by providing meaningful
-                          information.
-                        </h5>
-                      </GridItem>
-                    </GridContainer>
-                    <GridContainer>
+                    <GridContainer justify="center">  
                       <GridItem xs={12} sm={12} md={4}>
                         <InfoArea
                           icon={CodeIcon}
@@ -178,9 +161,7 @@ export default function ProfilePage({ ...rest }) {
                           description={
                             <span>
                               <p>
-                                Divide details about your product or agency work into
-                                parts. Write a few lines about each one. A paragraph
-                                describing a feature will be enough.
+                              Flicking between PC and Consoles, I have always enjoyed digital escapism. It's easy to spot patterns of activity retrospectively, and my gaming habits can loosely be split into A-Games and B-Games. A-Games are more active, pressured and a great source of adrenaline e.g. First Person Shooters and Sim Racing. B-Games are more laid back and serve as a relaxant, adventure crafters and more casual titles.
                               </p>
                             </span>
                           }
@@ -203,7 +184,6 @@ export default function ProfilePage({ ...rest }) {
                           iconColor="success"
                         />
                       </GridItem>
-                    </GridContainer>
                     </GridContainer>
                   )
                 },
