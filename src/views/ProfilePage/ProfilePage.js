@@ -126,6 +126,15 @@ export default function ProfilePage({ ...rest }) {
                   >
                     <i className={classes.socials + " fab fa-youtube"} />
                   </Button>
+                  <Button
+                    justIcon
+                    simple
+                    color="twitter"
+                    className={classes.margin5}
+                    href="https://www.linkedin.com/in/olivergill/"
+                  >
+                    <i className={classes.socials + " fab fa-linkedin"} />
+                  </Button>
                 </div>
               </div>
             </GridItem>
@@ -139,6 +148,7 @@ export default function ProfilePage({ ...rest }) {
                   tabButton: "About Me",
                   tabIcon: EmojiPeople,
                   tabContent: (
+                    <div>
                     <GridContainer justify="center">  
                       <GridItem xs={12} sm={12} md={4}>
                         <InfoArea
@@ -175,9 +185,7 @@ export default function ProfilePage({ ...rest }) {
                           description={
                             <span>
                               <p>
-                                Divide details about your product or agency work into
-                                parts. Write a few lines about each one. A paragraph
-                                describing a feature will be enough.
+                              I have been prototyping ideas since kindergarten and still love to hack things together to prove a concept, suss out it's potential value, or just to see what happens. I have a passion for tinkering and my greatest source of happiness is helping friends and family with the first steps of their projects and holding the torch (or soldiering iron) through the trickier early stages of idea development. 
                               </p>
                             </span>
                           }
@@ -185,17 +193,31 @@ export default function ProfilePage({ ...rest }) {
                         />
                       </GridItem>
                     </GridContainer>
+                    <GridContainer justify="center">
+                      
+                    </GridContainer>
+                    </div>
                   )
                 },
                 {
                   tabButton: "Work",
                   tabIcon: Briefcase,
                   tabContent: (
+                    <div>
                     <GridContainer justify="center">
-                      <br />
-                      <GridItem xs={12} sm={12} md={8}>
-                        Oli is a Digital Consultant experienced in digital strategy, business development, and solution architecture. With a background in computer science and electronic engineering, he has a keen grasp on emerging technologies and trends. This, paired with a broad view over multiple industries, allows him to effectively devise and communicate new concepts, solutions and strategies with clients, and together develop a vision and execution path for their own digital future.
+                      <GridItem xs={12} sm={12} md={10}>
+                            <span>
+                              <p>
+                              If I describe myself as a consultant, nobody knows what that means, and for good reason. The issue with "consulting" as a career is how much of a catch-all term it has become, and therefore become meaningless. If I were to write out all the responsibilities I have held and roles I have performed, contractually and otherwise, there would be few areas of business I haven't touched.<br /><br />Rather than roll off my CV, I feel it would be best to explain what I actually end up doing which also turns out to be what I find most enjoyable.
+                              </p>
+                            </span>
+
                       </GridItem>
+                    </GridContainer>
+                    <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={10}>
+                      <h3>Some roles of note</h3>
+                    </GridItem>
                       <GridItem xs={12} sm={12} md={8}>
                       <Accordion
                       
@@ -204,25 +226,26 @@ export default function ProfilePage({ ...rest }) {
                           {
                             title: "Senior Consultant - Atos",
                             content:
-                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                              "TBC"
                           },
                           {
                             title: "Digital Strategy Consultant - Accenture",
                             content:
-                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                              "TBC"
                           },
                           {
                             title: "Technology Consultant - CSC",
                             content:
-                              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                              "TBC"
                           }
                         ]}
                       />
                       </GridItem>
                     </GridContainer>
+                    </div>
                   )
-                }
-                /*,
+                }/*
+                ,
                 {
                   tabButton: "Projects",
                   tabIcon: Projects,
