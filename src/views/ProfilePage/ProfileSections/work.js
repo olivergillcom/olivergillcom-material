@@ -23,10 +23,6 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 export default function Work({ ...rest }) {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  });
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -46,7 +42,7 @@ export default function Work({ ...rest }) {
 
                       </GridItem>
                     </GridContainer>
-                    <GridContainer justify="center">
+                    {/*<GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={10}>
                       <h3>My favourite roles</h3>
                     </GridItem>
@@ -73,7 +69,7 @@ export default function Work({ ...rest }) {
                         ]}
                       />
                       </GridItem>
-                    </GridContainer>
+                      </GridContainer>*/}
                     </div>
                   
   );

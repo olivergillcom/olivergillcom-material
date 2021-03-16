@@ -27,10 +27,7 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 export default function About({ ...rest }) {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  });
+
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -96,8 +93,8 @@ export default function About({ ...rest }) {
                           </h5>
                         </GridItem>
                       </GridContainer>
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={4} md={4}>
+                        <GridContainer>
+                          <GridItem xs={12} sm={8} md={4}>
                             <InfoArea
                               title="Free Chat"
                               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
@@ -106,7 +103,7 @@ export default function About({ ...rest }) {
                               vertical
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={4} md={4}>
+                          <GridItem xs={12} sm={8} md={4}>
                             <InfoArea
                               title="Verified Users"
                               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
@@ -115,7 +112,7 @@ export default function About({ ...rest }) {
                               vertical
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={4} md={4}>
+                          <GridItem xs={12} sm={8} md={4}>
                             <InfoArea
                               title="Fingerprint"
                               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."

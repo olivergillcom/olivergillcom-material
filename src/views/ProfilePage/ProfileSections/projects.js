@@ -26,10 +26,6 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 export default function Project({ ...rest }) {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  });
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
