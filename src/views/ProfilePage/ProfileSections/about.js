@@ -121,7 +121,7 @@ export default function About({ ...rest }) {
                               vertical
                             />
                           </GridItem>
-                        </GridContainer>
+                    </GridContainer>
                       </div>
   );
 }
