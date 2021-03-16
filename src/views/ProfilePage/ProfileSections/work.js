@@ -39,6 +39,7 @@ export default function Work({ ...rest }) {
                               If I describe myself as a consultant, nobody knows what that means. The issue with "consulting" as a career is how much of a catch-all term it has morphed into, and therefore become meaningless. If I were to write out all the responsibilities I have held and roles I have performed, there would be few areas of business I haven't touched.<br /><br />Rather than roll off my CV, I feel it would be best to explain what I actually end up doing which also turns out to be what I find most enjoyable.
                               </p>
                             </span>
+                          <br /><center><span><h5>Apparently that includes half building websites, to be continued...</h5></span></center>
 
                       </GridItem>
                     </GridContainer>

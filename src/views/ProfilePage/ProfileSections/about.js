@@ -81,6 +81,7 @@ export default function About({ ...rest }) {
                         />
                       </GridItem>
                     </GridContainer>
+                    {/*}
                     <GridContainer justify="center">
                         <GridItem xs={12} sm={8} md={8}>
                           <h2 className={classes.title}>Personality</h2>
@@ -121,7 +122,7 @@ export default function About({ ...rest }) {
                               vertical
                             />
                           </GridItem>
-                    </GridContainer>
+                        </GridContainer>*/}
                       </div>
   );
 }
