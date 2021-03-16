@@ -109,11 +109,11 @@ export default function ProfilePage({ ...rest }) {
                   <Button
                     justIcon
                     simple
-                    color="twitter"
+                    color="linkedin"
                     className={classes.margin5}
                     href="https://www.linkedin.com/in/olivergill/"
                   >
-                    <i className={classes.socials + " fab fa-linkedin"} />
+                    <i className={classes.socials + " fab fa-linkedin-in"} />
                   </Button>
                 </div>
               </div>
@@ -132,22 +132,25 @@ export default function ProfilePage({ ...rest }) {
                 tabButton: "Work",
                 tabIcon: Briefcase,
                 tabContent: (<Work/>)
-              },
+              }
+              /*,
               {
                 tabButton: "Projects",
                 tabIcon: Projects,
                 tabContent: (<Project/>)
-              },
+              }*/
+              /*,
               {
                 tabButton: "Photos",
                 tabIcon: Camera,
                 tabContent: (<Photos/>)
-              },
+              }*/
+              /*,
               {
                 tabButton: "Friends",
                 tabIcon: People,
                 tabContent: (<Friends/>)
-              }
+              }*/
               ]}
             />
           </div>
